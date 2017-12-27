@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://s.codepen.io/boomerang/iFrameKey-41155fe2-e321-0d3d-72ee-6244cf65f82a/index.html -->
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js"></script><script src="./events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js"></script><script src="./css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js"></script><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"><link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111"><link rel="canonical" href="https://codepen.io/anon/pen/MrJOBB">
+
+
+<style class="cp-pen-styles">@import url(https://fonts.googleapis.com/css?family=Roboto:900);
+body, html {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+}
+
+body {
+  background: #aecad8;
+  -webkit-transition: all 0.14s ease-in;
+  transition: all 0.14s ease-in;
+}
+
+body.active {
+  background: #f3f7f9;
+}
+
+.container {
+  margin: auto;
+  width: 212px;
+}
+
+.power {
+  margin: auto;
+  margin-top: 20px;
+  background: #38434A;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 1.9em;
+  height: 65px;
+  letter-spacing: .2px;
+  line-height: 65px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 150px;
+  -webkit-transition: none;
+  transition: none;
+}
+.power:hover {
+  background: #414e56;
+}
+.power:active {
+  -webkit-box-shadow: inset 0px 4px 10px 0px #2d363b;
+          box-shadow: inset 0px 4px 10px 0px #2d363b;
+  -webkit-transition: background 0.14s ease-in;
+  transition: background 0.14s ease-in;
+}
+.active .power {
+  background: #58C48D;
+}
+.active .power:active {
+  -webkit-box-shadow: inset 0px 6px 8px -1px #41b77b;
+          box-shadow: inset 0px 6px 8px -1px #41b77b;
+}
+
+#on {
+  -webkit-transform: translate(50%, 50%) scale(0);
+          transform: translate(50%, 50%) scale(0);
+  opacity: 0;
+}
+.active #on {
+  opacity: 1;
+  -webkit-transform: translate(0) scale(1);
+          transform: translate(0) scale(1);
+  -webkit-transition: all 0.14s ease-in;
+  transition: all 0.14s ease-in;
+}
+
+.fancy-bulb {
+  position: relative;
+}
+
+.streaks, .streaks:after, .streaks:before {
+  position: absolute;
+  background: #FFDB55;
+  border-radius: 5.5px;
+  height: 11px;
+}
+
+.streaks:after, .streaks:before {
+  content: "";
+  display: block;
+}
+
+.streaks:before {
+  bottom: 65px;
+}
+
+.streaks:after {
+  top: 65px;
+}
+
+.left-streaks {
+  right: 217px;
+  top: 89.5px;
+}
+.active .left-streaks {
+  -webkit-animation: move-left 0.38s ease-out, width-to-zero 0.38s ease-out;
+          animation: move-left 0.38s ease-out, width-to-zero 0.38s ease-out;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+.left-streaks:before, .left-streaks:after {
+  left: 15px;
+}
+.active .left-streaks:before {
+  -webkit-animation: width-to-zero 0.38s ease-out, move-up 0.38s ease-out;
+          animation: width-to-zero 0.38s ease-out, move-up 0.38s ease-out;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+.active .left-streaks:after {
+  -webkit-animation: width-to-zero 0.38s ease-out, move-down 0.38s ease-out;
+          animation: width-to-zero 0.38s ease-out, move-down 0.38s ease-out;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+
+.right-streaks {
+  left: 217px;
+  top: 89.5px;
+}
+.active .right-streaks {
+  -webkit-animation: move-right 0.38s ease-out, width-to-zero 0.38s ease-out;
+          animation: move-right 0.38s ease-out, width-to-zero 0.38s ease-out;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+.right-streaks:before, .right-streaks:after {
+  right: 15px;
+}
+.active .right-streaks:before {
+  -webkit-animation: width-to-zero 0.38s ease-out, move-up 0.38s ease-out;
+          animation: width-to-zero 0.38s ease-out, move-up 0.38s ease-out;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+.active .right-streaks:after {
+  -webkit-animation: width-to-zero 0.38s ease-out, move-down 0.38s ease-out;
+          animation: width-to-zero 0.38s ease-out, move-down 0.38s ease-out;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+
+.left-streaks:before, .right-streaks:after {
+  -webkit-transform: rotate(34deg);
+          transform: rotate(34deg);
+}
+
+.left-streaks:after, .right-streaks:before {
+  -webkit-transform: rotate(-34deg);
+          transform: rotate(-34deg);
+}
+
+@-webkit-keyframes move-left {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  65% {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  100% {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  65% {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  100% {
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+}
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  65% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  100% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+}
+@keyframes move-right {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  65% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  100% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+}
+@-webkit-keyframes width-to-zero {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 11px;
+  }
+}
+@keyframes width-to-zero {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 11px;
+  }
+}
+@-webkit-keyframes move-up {
+  100% {
+    bottom: 100.75px;
+  }
+}
+@keyframes move-up {
+  100% {
+    bottom: 100.75px;
+  }
+}
+@-webkit-keyframes move-down {
+  100% {
+    top: 100.75px;
+  }
+}
+@keyframes move-down {
+  100% {
+    top: 100.75px;
+  }
+}
+</style></head><body class="active">
+<div class="container">
+  <div class="fancy-bulb">
+  <div class="left-streaks streaks"></div>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+<g id="off">
+	<path fill="#E2ECF1" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+		c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"></path>
+</g>
+  <g id="on">
+	<path fill="#FFDB55" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8
+		c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"></path>
+    
+</g>
+
+<g id="outline">
+	<path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16
+		v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"></path>
+	<path fill="#F1F2F2" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19
+		h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"></path>
+	<line fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"></line>
+	<path fill="none" stroke="#38434A" stroke-width="19.1022" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4
+		c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"></path>
+</g>
+<g id="highlight">
+	<path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5
+		c-12.3-16.1-28.4-29.1-46.9-37.8"></path>
+	<path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21.0124" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4
+		c-0.8-2.2-1.8-4.4-2.7-6.5"></path>
+</g>
+</svg>
+<div class="right-streaks streaks"></div>
+</div>
+<div class="power">
+  Power
+</div>
+
+</div>
+<script src="./stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js"></script><script src="./jquery.min.js"></script>
+<script>$(function(){
+  $(".power").click(function(){
+    $("body").toggleClass("active");
+  });  
+});
+//# sourceURL=pen.js
+</script><script src="./check-c263eb37bf3a3d49b8311c096168b478f5750c61a1166ea2cc660498870d671f.js"></script>
+</body></html>

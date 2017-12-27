@@ -1,0 +1,1 @@
+!function(){function e(){return document.referrer||document.location.href}function n(){if(!t){t=!0;var n=new XMLHttpRequest;n.open("POST","/live/check",!0),n.setRequestHeader("Content-Type","application/json"),n.send(JSON.stringify({h:document.body.innerHTML,u:e()}))}}var t=!1;window.addEventListener("load",function(){setTimeout(n,200)}),setTimeout(n,700)}();

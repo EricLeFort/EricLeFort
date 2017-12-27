@@ -1,0 +1,391 @@
+@font-face{
+	font-family: 'fortinSans';
+	src: 
+		local('Fortin Sans'),
+		local('Fortin-Sans'),
+		url('fonts/Fontin_Sans_R_45b.otf') 
+		format('opentype');
+}
+
+*{
+   font-family: 'fortinSans' !important;
+}
+
+html, body{
+	background: #F0EFED;
+	margin: 0;
+	padding: 0;
+	min-height: 100rem;
+}
+
+.center{
+	display: block;
+	margin: auto;
+}
+
+.header{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	min-height: 10rem;
+	text-align: center;
+	border-bottom: 0.05em dotted #aaaaaa;
+	background: #F0EFED;
+	z-index: 2;
+}
+.title{
+	font-size: 4rem;
+	padding-top: 1rem;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0;
+	color: #808080;
+}
+.top-nav-links{
+	position: absolute;
+	top: 73%;
+	right: 0;
+	left: 0;
+}
+.top-nav-link{
+	font-size: 1.5rem;
+	height: 5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	background-color: ;
+	color: #808080;
+	text-decoration: none;
+}
+.top-nav-link:hover{
+	background-color: #D8D7D5;
+}
+
+.subtitle{
+	font-size: 2rem;
+	position: absolute;
+	width: 75%;
+	text-align: center;
+	padding-top: 3rem;
+	left: 12.5%;
+	border-top: 0.002rem solid #aaaaaa;
+	color: #808080;
+}
+
+.blurb{
+	font-size: 1.5rem;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #808080;
+}
+
+.contents{
+	position: absolute;
+	top: 10rem;
+	right: 0;
+	left: 0;
+	height: 90rem;
+	background: #F0EFED;
+	z-index: 1;
+}
+
+.soft{
+	position: relative;
+	top: 57rem;
+	padding: 0;
+}
+
+.ml{
+	position: relative;
+	top: 95rem;
+	padding: 0;
+}
+
+.langs{
+	position: relative;
+	top: 110rem;
+	padding: 0;
+}
+
+#bio-section{
+	top: 0;
+}
+
+#do-section{
+	top: 40rem;
+}
+
+#lang-section{
+	top: 128rem;
+}
+
+#bio{
+	top: 9rem;
+}
+
+#soft-descript{
+	top: 50rem;
+}
+
+#ml-descript{
+	top: 88rem;
+}
+
+#copyright{
+	position: absolute;
+	width: 100%;
+	padding-bottom: 0.5rem;
+	text-align: center;
+	top: 184rem;
+	z-index: 10;
+	color: #808080;
+}
+
+/*
+ * Lightbulb
+ */
+.bulb-container{
+	position: absolute;
+	transform: scale(0.5);
+	top: 50rem;
+	left: 14rem;
+	width: 212px;
+	transition: all 0.35s ease-in;
+}
+#on{
+	transform: translate(50%, 50%) scale(0);
+	opacity: 0;
+}
+.active #on{
+	opacity: 1;
+	transform: translate(0) scale(1);
+	transition: all 0.35s ease-in;
+}
+.fancy-bulb{
+	position:relative;
+}
+.streaks, .streaks:after, .streaks:before{
+	position: absolute;
+	background: #FFDB55;
+	border-radius: 5.5px;
+	height: 11px;
+}
+.streaks:after, .streaks:before{
+	content: "";
+	display: block;
+}
+.streaks:before{
+	bottom: 65px;
+}
+.streaks:after{
+	top: 65px;
+}
+.left-streaks{
+	right: 217px;
+	top: 89.5px;
+}
+.active .left-streaks{
+	animation: move-left 0.38s ease-out, width-to-zero 0.38s ease-out;
+	animation-delay: 0.35s;
+}
+.left-streaks:before, .left-streaks:after{
+	left: 15px;
+}
+.active .left-streaks:before{
+	animation: width-to-zero 0.38s ease-out, move-up 0.38s ease-out;
+	animation-delay: 0.35s;
+}
+.active .left-streaks:after{
+	animation: width-to-zero 0.38s ease-out, move-down 0.38s ease-out;
+	animation-delay: 0.35s;
+}
+.right-streaks{
+	left: 217px;
+	top: 89.5px;
+}
+.active .right-streaks{
+	animation: move-right 0.38s ease-out, width-to-zero 0.38s ease-out;
+	animation-delay: 0.35s;
+}
+.right-streaks:before, .right-streaks:after{
+	right: 15px;
+}
+.active .right-streaks:before{
+	animation: width-to-zero 0.38s ease-out, move-up 0.38s ease-out;
+	animation-delay: 0.35s;
+}
+.active .right-streaks:after{
+	animation: width-to-zero 0.38s ease-out, move-down 0.38s ease-out;
+	animation-delay: 0.35s;
+}
+.left-streaks:before, .right-streaks:after{
+	transform: rotate(34deg);
+}
+.left-streaks:after, .right-streaks:before{
+	transform: rotate(-34deg);
+}
+@keyframes move-left{
+	0%{ transform: none; }
+	65%{ transform: translateX(-80px); }
+	100%{ transform: translateX(-80px); }
+}
+@keyframes move-right{
+	0%{ transform: none; }
+	65%{ transform: translateX(80px); }
+	100%{ transform: translateX(80px); }
+}
+@keyframes width-to-zero{
+	0%{ width: 50px; }
+	100%{ width: 11px; }
+}
+@keyframes move-up{
+	0%{ }
+	100%{ bottom: 100.75px; }
+}
+@keyframes move-down{
+	0%{ }
+	100%{ top: 100.75px; }
+}
+
+/*
+ * Right arrows
+ */
+.right-arrow{
+	position: absolute;
+	height: 130px;
+	width: 110px;
+}
+.right-arrow path{
+	fill: #808080;
+}
+#arrow1{
+	transform: rotate(50deg);
+	top: 63rem;
+	left: 20rem;
+}
+#arrow2{
+	transform: rotate(-50deg);
+	top: 63rem;
+	left: 41rem;
+}
+#arrow3{
+	transform: rotate(50deg);
+	top: 63rem;
+	left: 64rem;
+}
+
+/*
+ * Basic graph properties
+ */
+svg.graph{
+	transform: scale(1.3);
+	height: 500px;
+	width: 800px;
+}
+svg.graph .grid{
+	stroke: #aaaaaa;
+	stroke-dasharray: 1 2;
+	stroke-width: 1;
+}
+svg.graph .prediction-line{
+	stroke: #ff0000;
+	stroke-width: 1;
+}
+svg.graph .points{
+	stroke: white;
+	stroke-width: 3;
+}
+svg.graph .lang-set{
+	fill: #00554d;
+}
+svg.graph .ml-set{
+	fill: none;
+	stroke: #00554d;
+	stroke-width: 1.5;
+}
+svg.graph .surfaces{
+	fill-opacity: 0.5;
+}
+svg.graph .grid.double{
+	stroke-opacity: 0.4;
+}
+svg.graph .labels{
+	font-family: Arial;
+	font-size: 14px;
+	kerning: 1;
+}
+svg.graph .labels.x-labels{
+	text-anchor: middle;
+}
+svg.graph .labels.y-labels{
+	text-anchor: end;
+}
+svg.graph text{
+	fill: #808080;
+}
+
+/*
+ * Vertical indication bar
+ */
+svg.graph rect.indicator{
+	stroke-width: 1px;
+	stroke: #cccccc;
+	fill: none;
+	dispay: none;
+}
+svg.graph .triggerLines{
+	stroke-width: 60;
+	stroke: transparent;
+}
+
+/*
+ * Tooltip for data points
+ */
+ #tooltip{
+	position: absolute;
+	background: black;
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 14px;
+	font-weight: lighter;
+	padding: 9px 11px 0px 11px;
+	display: none;
+	z-index: 100;
+	width: 165px;
+	min-height: 80px;
+	box-shadow: 1px 1px 1px 0px #000;
+}
+#tooltip.right{
+	box-shadow: -1px 1px 1px 0px #000;
+}
+#tooltip.right svg{
+	left: auto;
+	right: 0px;
+}
+#tooltip svg{
+	position: absolute;
+	display: inline;
+	float: right;
+	left: 0px;
+	right: auto;
+	top: -13px;
+	width: 11px;
+	height: 13px;
+}
+#tooltip #tooltip-triangle{
+	background: black;
+	fill: rgba(0, 0, 0, 0.8);
+}
+#tooltip .count .count-total{
+	font-size: 32px;
+	vertical-align: top;
+	position: relative;
+	top: -3px;
+}
+.tooltip-languages{
+	font-size: 15px;
+}

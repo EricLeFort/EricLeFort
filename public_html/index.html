@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Eric Le Fort</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="index.css"/>
+		<script type="text/javascript" src="js/jquery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.svg.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.svgdom.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.svganim.js"></script>
+	</head>
+	
+	<body>
+		<div class="header">
+			<h1 class="title">Welcome</h1>
+			<div class="top-nav-links">
+				<a class="top-nav-link" href="index.html">Home</a>
+				<a class="top-nav-link" href="projects.html">Projects</a>
+				<a class="top-nav-link" href="resume.html">Resume</a>
+				<a class="top-nav-link" href="contact.html">Contact</a>
+			</div>
+		</div>
+
+		<div class="contents">
+			<h2 class="subtitle center" id="bio-section">Who I Am</h2>
+			<p class="blurb center" id="bio">Software Engineer, Machine Learning Scientist, Creator.<br><br><br><br><br>
+				I strive to change the world for the better in any way possible.<br><br>
+				My MO is to work smart <i>and</i> hard.</p>
+
+			<h2 class="subtitle center" id="do-section">Some of What I Do</h2>
+			<p class="blurb center" id="soft-descript">Formulate, design, build and verify large software projects.</p>
+			<!--<div class="bulb-container">
+				<div class="fancy-bulb">
+					<div class="left-streaks streaks"></div>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 275.3 413.3" enable-background="new 0 0 275.3 413.3" xml:space="preserve">
+						<g id="off">
+							<path fill="#E2ECF1" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8 c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+						</g>
+
+						<g id="on">
+							<path fill="#ffe276" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8 c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+						</g>
+
+						<g id="outline">
+							<path fill="#F1F2F2" stroke="#808080" stroke-width="19" stroke-miterlimit="10" d="M168.5,375.5h-61.7c-8.9,0-16-7.2-16-16 v-55.8h93.8v55.8C184.6,368.3,177.4,375.5,168.5,375.5z"/>
+							<path fill="#F1F2F2" stroke="#808080" stroke-width="19" stroke-miterlimit="10" d="M151.2,401.5h-27.1c-3.9,0-7-3.2-7-7v-19 h41.1v19C158.2,398.4,155.1,401.5,151.2,401.5z"/>
+							<line fill="none" stroke="#808080" stroke-width="19" stroke-miterlimit="10" x1="184.6" y1="339.6" x2="90.8" y2="339.6"/>
+							<path fill="none" stroke="#808080" stroke-width="19" stroke-miterlimit="10" d="M137.7,13.7C67.2,13.7,10,70.9,10,141.4 c0,58.3,72.8,118.2,79.9,162.3h47.8h47.8c7.1-44,79.9-103.9,79.9-162.3C265.3,70.9,208.2,13.7,137.7,13.7z"/>
+						</g>
+						<g id="highlight">
+							<path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" stroke-miterlimit="10" d="M207.1,89.5 c-12.3-16.1-28.4-29.1-46.9-37.8"/>
+							<path fill="#FFDB55" stroke="#FFFFFF" stroke-width="21" stroke-linecap="round" stroke-miterlimit="10" d="M225,121.4 c-0.8-2.2-1.8-4.4-2.7-6.5"/>
+						</g>
+					</svg>
+					<div class="right-streaks streaks"></div>
+				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="arrow1" viewBox="0 0 31.49 31.49" xml:space="preserve" class="right-arrow">
+				<path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+			</svg>
+			<!--TODO: graph thing- ->
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="arrow2" viewBox="0 0 31.49 31.49" xml:space="preserve" class="right-arrow">
+				<path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+			</svg>
+			<!--TODO: code thing- ->
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="arrow3" viewBox="0 0 31.49 31.49" xml:space="preserve" class="right-arrow">
+				<path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+			</svg>
+			<!--TODO: checklist thing- ->
+			-->
+
+			<p class="blurb center" id="ml-descript">Develop cutting-edge machine learning applications to move from data to action.</p>
+			<svg class="graph ml center" id="ml-graph" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+				<g class="grid x-grid" id="xGrid">
+					<line x1="70" x2="70" y1="30" y2="390"></line>
+					<line x1="90" x2="90" y1="30" y2="390"></line>
+					<line x1="110" x2="110" y1="30" y2="390"></line>
+					<line x1="130" x2="130" y1="30" y2="390"></line>
+					<line x1="150" x2="150" y1="30" y2="390"></line>
+					<line x1="170" x2="170" y1="30" y2="390"></line>
+					<line x1="190" x2="190" y1="30" y2="390"></line>
+					<line x1="210" x2="210" y1="30" y2="390"></line>
+					<line x1="230" x2="230" y1="30" y2="390"></line>
+					<line x1="250" x2="250" y1="30" y2="390"></line>
+					<line x1="270" x2="270" y1="30" y2="390"></line>
+					<line x1="290" x2="290" y1="30" y2="390"></line>
+					<line x1="310" x2="310" y1="30" y2="390"></line>
+					<line x1="330" x2="330" y1="30" y2="390"></line>
+					<line x1="350" x2="350" y1="30" y2="390"></line>
+					<line x1="370" x2="370" y1="30" y2="390"></line>
+					<line x1="390" x2="390" y1="30" y2="390"></line>
+					<line x1="410" x2="410" y1="30" y2="390"></line>
+					<line x1="430" x2="430" y1="30" y2="390"></line>
+					<line x1="450" x2="450" y1="30" y2="390"></line>
+					<line x1="470" x2="470" y1="30" y2="390"></line>
+					<line x1="490" x2="490" y1="30" y2="390"></line>
+					<line x1="510" x2="510" y1="30" y2="390"></line>
+					<line x1="530" x2="530" y1="30" y2="390"></line>
+					<line x1="550" x2="550" y1="30" y2="390"></line>
+					<line x1="570" x2="570" y1="30" y2="390"></line>
+					<line x1="590" x2="590" y1="30" y2="390"></line>
+					<line x1="610" x2="610" y1="30" y2="390"></line>
+					<line x1="630" x2="630" y1="30" y2="390"></line>
+					<line x1="650" x2="650" y1="30" y2="390"></line>
+					<line x1="670" x2="670" y1="30" y2="390"></line>
+					<line x1="690" x2="690" y1="30" y2="390"></line>
+					<line x1="710" x2="710" y1="30" y2="390"></line>
+					<line x1="730" x2="730" y1="30" y2="390"></line>
+				</g>
+				<g class="grid y-grid" id="yGrid">
+					<line x1="50" x2="750" y1="50" y2="50"></line>
+					<line x1="50" x2="750" y1="70" y2="70"></line>
+					<line x1="50" x2="750" y1="90" y2="90"></line>
+					<line x1="50" x2="750" y1="110" y2="110"></line>
+					<line x1="50" x2="750" y1="130" y2="130"></line>
+					<line x1="50" x2="750" y1="150" y2="150"></line>
+					<line x1="50" x2="750" y1="170" y2="170"></line>
+					<line x1="50" x2="750" y1="190" y2="190"></line>
+					<line x1="50" x2="750" y1="210" y2="210"></line>
+					<line x1="50" x2="750" y1="230" y2="230"></line>
+					<line x1="50" x2="750" y1="250" y2="250"></line>
+					<line x1="50" x2="750" y1="270" y2="270"></line>
+					<line x1="50" x2="750" y1="290" y2="290"></line>
+					<line x1="50" x2="750" y1="310" y2="310"></line>
+					<line x1="50" x2="750" y1="330" y2="330"></line>
+					<line x1="50" x2="750" y1="350" y2="350"></line>
+					<line x1="50" x2="750" y1="370" y2="370"></line>
+				</g>
+
+				<g class="prediction-line">
+					<path d="M 360,30 L 590,390"></line>
+				</g>
+				<g class="ml-set">
+					<circle data-pos="1,14" cx="90" cy="90" r="5"></circle>
+					<circle data-pos="2,1" cx="110" cy="350" r="5"></circle>
+					<circle data-pos="3,9" cx="130" cy="190" r="5"></circle>
+					<circle data-pos="10,13" cx="250" cy="110" r="5"></circle>
+					<circle data-pos="12,6" cx="290" cy="250" r="5"></circle>
+					<circle data-pos="14,1" cx="330" cy="350" r="5"></circle>
+					<circle data-pos="15,16" cx="350" cy="50" r="5"></circle>
+					<circle data-pos="18,12" cx="410" cy="190" r="5"></circle>
+					<circle data-pos="23,3" cx="510" cy="310" r="5"></circle>
+					<rect data-pos="18,15" x="405" y="65" width="10" height="10"></rect>
+					<rect data-pos="23,10" x="505" y="165" width="10" height="10"></rect>
+					<rect data-pos="25,14" x="545" y="85" width="10" height="10"></rect>
+					<rect data-pos="27,1" x="585" y="345" width="10" height="10"></rect>
+					<rect data-pos="31,7" x="665" y="225" width="10" height="10"></rect>
+					<rect data-pos="32,13" x="685" y="105" width="10" height="10"></rect>
+				</g>
+			</svg>
+
+			<h2 class="subtitle center" id="lang-section">Languages I've Learned Along the Way</h2>
+			<svg class="graph langs center" id="lang-graph" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<radialGradient cx="50%" cy="50%" fx="50%" fy="50%" id="gradientShadow" r="55%">
+						<stop offset="0%" style="stop-color:rgb(0,0,0); stop-opacity:1"></stop>
+						<stop offset="100%" style="stop-color: #AAA; stop-opacity:0"></stop>
+					</radialGradient>
+				</defs>
+
+			    <g class="grid x-grid" id="xGrid">
+					<line x1="113" x2="113" y1="10" y2="380"></line>
+					<line x1="259" x2="259" y1="10" y2="380"></line>
+					<line x1="405" x2="405" y1="10" y2="380"></line>
+					<line x1="551" x2="551" y1="10" y2="380"></line>
+					<line x1="697" x2="697" y1="10" y2="380"></line>
+				</g>
+				<g class="grid y-grid" id="yGrid">
+					<line x1="86" x2="697" y1="10" y2="10"></line>
+					<line x1="86" x2="697" y1="68" y2="68"></line>
+					<line x1="86" x2="697" y1="126" y2="126"></line>
+					<line x1="86" x2="697" y1="185" y2="185"></line>
+					<line x1="86" x2="697" y1="243" y2="243"></line>
+					<line x1="86" x2="697" y1="301" y2="301"></line>
+					<line x1="86" x2="697" y1="360" y2="360"></line>
+				</g>
+
+			    <g class="surfaces">
+					<path class="first_set" d="M113,360 L113,350 L186,338 L259,338 332,316 L405,264 L478,222 L551,208 L624,126 L697,105 L697,360 Z"></path>
+				</g>
+
+				<g class="lang-set points" data-setname="New Languages:">
+					<circle class="shadow" cx="113" cy="350" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="113" cy="350" data-count="1" data-languages="Visual Basic" r="5"></circle>
+					<circle class="shadow" cx="186" cy="338" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="186" cy="338" data-count="2" data-languages="Java" r="5"></circle>
+					<circle class="shadow" cx="259" cy="338" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="259" cy="338" data-count="2" data-languages="" r="5"></circle>
+					<circle class="shadow" cx="332" cy="316" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="332" cy="316" data-count="4" data-languages="Python,MATLAB" r="5"></circle>
+					<circle class="shadow" cx="405" cy="264" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="405" cy="264" data-count="8" data-languages="MySQL,PHP,Bash,HTML/CSS" r="5"></circle>
+					<circle class="shadow" cx="478" cy="222" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="478" cy="222" data-count="12" data-languages="C,C++,JavaScript,LaTex" r="5"></circle>
+					<circle class="shadow" cx="551" cy="208" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="551" cy="208" data-count="13" data-languages="Lua" r="5"></circle>
+					<circle class="shadow" cx="624" cy="126" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="624" cy="126" data-count="20" data-languages="Scala,Rust,Haskell,Swift,TypeScript,OCaml,Prolog" r="5"></circle>
+					<circle class="shadow" cx="697" cy="105" r="5" stroke="#AAA" stroke-width="4" stroke-opacity="1" style="fill: url(#gradientShadow);"></circle>
+					<circle class="plain" cx="697" cy="105" data-count="22" data-languages="R,Hadoop" r="5"></circle>
+				</g>
+
+				<g class="labels x-labels">
+					<text x="113" y="400">2010</text>
+					<text x="259" y="400">2012</text>
+					<text x="405" y="400">2014</text>
+					<text x="551" y="400">2016</text>
+					<text x="697" y="400">2018</text>
+				</g>
+				<g class="labels y-labels">
+					<text x="80" y="15">30</text>
+					<text x="80" y="72">25</text>
+					<text x="80" y="131">20</text>
+					<text x="80" y="189">15</text>
+					<text x="80" y="248">10</text>
+					<text x="80" y="306">5</text>
+					<text x="80" y="365">0</text>
+				</g>
+
+				<rect class="indicator" height="155" width="1" x="477.5" y="230" stroke-dasharray="2"></rect>
+				<g class="triggerLines">
+					<line x1="113" x2="113" y1="360" y2="350"></line>
+					<line x1="186" x2="186" y1="360" y2="338"></line>
+					<line x1="259" x2="259" y1="360" y2="338"></line>
+					<line x1="332" x2="332" y1="360" y2="316"></line>
+					<line x1="405" x2="405" y1="360" y2="264"></line>
+					<line x1="478" x2="478" y1="360" y2="222"></line>
+					<line x1="551" x2="551" y1="360" y2="208"></line>
+					<line x1="624" x2="624" y1="360" y2="126"></line>
+					<line x1="697" x2="697" y1="360" y2="105"></line>
+				</g>
+			</svg>
+			<div id="tooltip">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<polygon id="tooltip-triangle" points="0,0 11,13 0,13"></polygon>
+				</svg>
+				<div class="count">
+					<span class="count-total"></span>
+				</div>
+				<p id="tooltip-title"></p>
+				<ul class="tooltip-languages"></ul>
+			</div>
+		</div>
+		<p id="copyright">Copyright © 2014-2018 Eric Le Fort. All rights reserved.</p>
+	</body>
+	
+	<script type="text/javascript" src="js/scroll-actions.js"></script>
+	<script type="text/javascript" src="js/graph-animations.js"></script>
+</html>
