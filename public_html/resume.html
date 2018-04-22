@@ -3,42 +3,65 @@
 	<head>
 		<title>Resume</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="index.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css"/>
+		<link rel="stylesheet" href="resume.css"/>
+		<script type="text/javascript" src="js/jquery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.svg.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.svgdom.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.svganim.js"></script>
 	</head>
 	
 	<body>
-		<div class="wrapper">
-			<div class="header">
-				<div class="center">
-					<h1>Resume</h1>
-					<a href="index.html">Home</a>
-					<a href="resume.html">Resume</a>
-					<a href="samples.html">Sample Work</a>
-					<a href="contact.html">Contact</a>
-				</div>
-			</div>
-		
-			<div class="contents">
-				<div class="center">
-					<embed src="resources/resume.pdf" width=800 height=900>
-					<h3>References</h3>
-				</div>
-				<ul>
-					<li><a href="referenceLetters/Armstrong.html">G. Armstrong</a></li>
-					<li><a href="referenceLetters/Morrison.html">J. Morrison</a></li>
-					<li><a href="referenceLetters/vonFriedl.html">M. von Friedl</a></li>
-					<li><a href="referenceLetters/Raasch.html">D. Raasch</a></li>
-				</ul>
-				<br><br><br><br><br><!—Unnecessary, just stops footer from blocking—>
-			</div>
-	
-			<div class="footer">
-				<a href="index.html">Home</a>
-				<a href="resume.html">Resume</a>
-				<a href="samples.html">Sample Work</a>
-				<a href="contact.html">Contact</a><br>	
-				Updated: <time datetime="2015-02-07">7 February 2015</time>
+		<div class="header">
+			<h1 class="title">Resume</h1>
+			<div class="top-nav-links">
+				<a class="top-nav-link" href="index.html">Home</a>
+				<a class="top-nav-link" href="projects.html">Projects</a>
+				<a class="top-nav-link current-page" href="resume.html">Resume</a>
+				<a class="top-nav-link" href="contact.html">Contact</a>
 			</div>
 		</div>
+		
+		<div class="contents">
+			<a class="tile col1-5" href="resources/Resume.pdf" style="top: 5rem;" target="_blank">
+				<p class="main-tile-text">Resume</p>
+			</a>
+			<a class="tile col3-5" href="resources/CV.pdf" style="top: 5rem;" target="_blank">
+				<p class="main-tile-text">CV</p>
+			</a>
+
+			<h2 class="subtitle" style="top: 30rem;">Reference Letters</h2>
+			<a class="tile row1 col1" href="resources/CMcDonald.pdf" target="_blank">
+				<p class="tile-text">C. McDonald</p>
+				<p class="tile-description">Colleague</p>
+			</a>
+			<a class="tile row1 col2" href="resources/MMaisonneuve.pdf" target="_blank">
+				<p class="tile-text">M. Maisonneuve</p>
+				<p class="tile-description">Supervisor</p>
+			</a>
+			<a class="tile row1 col3" href="resources/RBradford.pdf" target="_blank">
+				<p class="tile-text">R. Bradford</p>
+				<p class="tile-description">Supervisor</p>
+			</a>
+			<a class="tile row1 col4" href="resources/GArmstrong.pdf" target="_blank">
+				<p class="tile-text">G. Armstrong</p>
+				<p class="tile-description">Commanding<br>Officer</p>
+			</a>
+			<a class="tile row2 col1-5" href="resources/JMorrison.pdf" target="_blank">
+				<p class="tile-text">J. Morrison</p>
+				<p class="tile-description">Family Friend</p>
+			</a>
+			<a class="tile row2 col2-5" href="resources/MvonFriedl.pdf" target="_blank">
+				<p class="tile-text">M. von Friedl</p>
+				<p class="tile-description">Teacher</p>
+			</a>
+			<a class="tile row2 col3-5" href="resources/DRaasch.pdf" target="_blank">
+				<p class="tile-text">D. Raasch</p>
+				<p class="tile-description">Teacher</p>
+			</a>
+		</div>
+		
+		<p id="copyright" style="top: 89rem;">Copyright © 2018 Eric Le Fort. All rights reserved.</p>
 	</body>
 </html>

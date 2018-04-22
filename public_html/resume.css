@@ -1,0 +1,57 @@
+.tile{
+	position:absolute;
+	width: 12rem;
+	height: 15rem;
+	text-align: center;
+	color: #808080;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 1pt;
+}
+
+.tile:hover{
+	background-color: #D8D7D5;
+}
+
+.main-tile-text{
+	font-size: 1.5rem;
+	margin: 6.75rem 0 6.75rem 0;
+}
+
+.tile-text{
+	font-size: 1.5rem;
+	margin: 6rem 0 0 0;
+}
+
+.tile-description{
+	font-style: italic;
+}
+
+.row1{
+	top: 43rem;
+}
+.row2{
+	top: 62rem;
+}
+
+.col1{
+	left: 14.5rem;
+}
+.col1-5{
+	left: 22.5rem;
+}
+.col2{
+	left: 30.5rem;
+}
+.col2-5{
+	left: 38.5rem;
+}
+.col3{
+	left: 46.5rem;
+}
+.col3-5{
+	left: 54.5rem;
+}
+.col4{
+	left: 62.5rem;
+}
