@@ -26,7 +26,6 @@ html, body{
 	position: absolute;
 	width: 100%;
 	top: 0;
-	min-height: 10rem;
 	text-align: center;
 	border-bottom: 0.05em dotted #aaaaaa;
 	background: #F0EFED;
@@ -41,20 +40,33 @@ html, body{
 	color: #808080;
 }
 .top-nav-links{
+	position: absolute;
+	display: flex;
+    justify-content: center;
 	width: 100%;
 	position: absolute;
-	top: 73%;
-	right: 0;
+	top: 5rem;
 }
-.top-nav-link{
-	font-size: 1.5rem;
-	width: 45%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+.tile{
+	position: relative;
+	width: 5rem;
+	height: 3rem;
+	padding-bottom: 2rem;
 	padding-left: 5%;
 	padding-right: 5%;
-	color: #808080;
+	text-align: center;
 	text-decoration: none;
+}
+
+.tile:hover{
+	background-color: #D8D7D5;
+}
+
+.top-nav-link-text{
+	position: absolute;
+	top: 0;
+	font-size: 2rem;
+	color: #808080;
 }
 .current-page{
 	border-bottom: #808080;
@@ -66,7 +78,7 @@ html, body{
 }
 
 .subtitle{
-	font-size: 2rem;
+	font-size: 6vh;
 	position: absolute;
 	width: 90%;
 	left: 5%;
@@ -78,7 +90,7 @@ html, body{
 
 .blurb{
 	width: 100%;
-	font-size: 1.5rem;
+	font-size: 4vh;
 	position: absolute;
 	text-align: center;
 	color: #808080;
@@ -132,8 +144,16 @@ html, body{
 	top: 130rem;
 }
 
-#bio{
-	top: 9rem;
+#bio1{
+	position: absolute;
+	padding-bottom: 2rem;
+	top: 10rem;
+}
+
+#bio2{
+	position: absolute;
+	padding-top: 4rem;
+	top: 25rem;
 }
 
 #soft-descript{
