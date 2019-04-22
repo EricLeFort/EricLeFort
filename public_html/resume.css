@@ -1,7 +1,10 @@
 .tile{
 	position:absolute;
-	width: 12rem;
-	height: 15rem;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 12.5vw;
+	height: 17vw;
 	text-align: center;
 	color: #808080;
 	text-decoration: none;
@@ -14,44 +17,48 @@
 }
 
 .main-tile-text{
-	font-size: 1.5rem;
-	margin: 6.75rem 0 6.75rem 0;
+	width: 100%;
+	font-size: 1.5vw;
 }
 
 .tile-text{
-	font-size: 1.5rem;
-	margin: 6rem 0 0 0;
+	width: 100%;
+	font-size: 1.5vw;
 }
 
 .tile-description{
+	position: absolute;
+	padding-top: 3vw;
+	width: 100%;
+	font-size: 1vw;
 	font-style: italic;
 }
 
 .row1{
-	top: 43rem;
+	top: 37vw;
 }
 .row2{
-	top: 62rem;
+	top: 57vw;
 }
 
 .col1{
-	left: 14.5rem;
+	left: 15vw;
 }
 .col1-5{
-	left: 22.5rem;
+	left: 25vw;
 }
 .col2{
-	left: 30.5rem;
+	left: 34.2vw;
 }
 .col2-5{
-	left: 38.5rem;
+	left: 44vw;
 }
 .col3{
-	left: 46.5rem;
+	left: 53.3vw;
 }
 .col3-5{
-	left: 54.5rem;
+	left: 63vw;
 }
 .col4{
-	left: 62.5rem;
+	left: 72.5vw;
 }
